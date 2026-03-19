@@ -1,0 +1,3588 @@
+[
+  {
+    "value": "malops189@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 77.96,
+    "current_confidence": 77.96,
+    "first_seen": "2026-02-14T02:29:57.629247",
+    "last_seen": "2026-02-23T17:53:34.329059",
+    "observations": [
+      "2026-02-14T02:29:57.629247",
+      "2026-02-23T17:53:34.329059"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "medium",
+    "source_reliability": 0.81,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "spam178@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 75.89,
+    "current_confidence": 75.89,
+    "first_seen": "2026-02-04T01:10:50.822595",
+    "last_seen": "2026-02-21T15:29:14.072660",
+    "observations": [
+      "2026-02-04T01:10:50.822595",
+      "2026-02-18T23:29:49.941998",
+      "2026-02-20T18:28:44.480962",
+      "2026-02-21T15:29:14.072660"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "medium",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://drop-109.malware.io/payload.exe",
+    "indicator_type": "URL",
+    "initial_confidence": 76.66,
+    "current_confidence": 76.66,
+    "first_seen": "2026-01-31T07:12:39.750304",
+    "last_seen": "2026-02-12T18:41:29.490860",
+    "observations": [
+      "2026-01-31T07:12:39.750304",
+      "2026-02-08T04:18:25.427389",
+      "2026-02-12T18:41:29.490860"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.75,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "a6562074d92b1ac6c3068fae9346d0989f2f7f23301a3d295bc188d8e0b9c129",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 72.81,
+    "current_confidence": 72.81,
+    "first_seen": "2026-01-01T22:25:19.929305",
+    "last_seen": "2026-02-11T09:14:28.705552",
+    "observations": [
+      "2026-01-01T22:25:19.929305",
+      "2026-01-12T23:10:14.683410",
+      "2026-01-13T01:44:26.970183",
+      "2026-02-11T09:14:28.705552"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "critical",
+    "source_reliability": 0.96,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "http://phish-123.example.com/login",
+    "indicator_type": "URL",
+    "initial_confidence": 91.49,
+    "current_confidence": 91.49,
+    "first_seen": "2026-01-26T15:21:59.965909",
+    "last_seen": "2026-02-11T07:18:59.994044",
+    "observations": [
+      "2026-01-26T15:21:59.965909",
+      "2026-02-11T07:18:59.994044"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "medium",
+    "source_reliability": 0.72,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "91.189.170.95",
+    "indicator_type": "IP",
+    "initial_confidence": 70.35,
+    "current_confidence": 70.35,
+    "first_seen": "2026-02-01T08:03:49.199732",
+    "last_seen": "2026-02-11T00:51:14.223732",
+    "observations": [
+      "2026-02-01T08:03:49.199732",
+      "2026-02-11T00:51:14.223732"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "http://phish-115.example.com/login",
+    "indicator_type": "URL",
+    "initial_confidence": 82.09,
+    "current_confidence": 82.09,
+    "first_seen": "2026-02-21T10:32:15.585796",
+    "last_seen": "2026-02-23T20:40:55.509641",
+    "observations": [
+      "2026-02-21T10:32:15.585796",
+      "2026-02-23T20:40:55.509641"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "medium",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "192.0.2.15",
+    "indicator_type": "IP",
+    "initial_confidence": 94.13,
+    "current_confidence": 94.13,
+    "first_seen": "2026-02-23T10:57:05.451235",
+    "last_seen": "2026-02-23T10:57:05.451235",
+    "observations": [
+      "2026-02-23T10:57:05.451235"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "high",
+    "source_reliability": 0.6,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "370fb1ee8b5f112d196f345cbb5413c922768f34412adb0d51358a4f067b37c2",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 97.51,
+    "current_confidence": 97.51,
+    "first_seen": "2026-01-09T07:54:30.678837",
+    "last_seen": "2026-01-31T01:32:52.293830",
+    "observations": [
+      "2026-01-09T07:54:30.678837",
+      "2026-01-31T01:32:52.293830"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "critical",
+    "source_reliability": 0.92,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "7269a66eb07455c4ddaf34bc5b917e67850c1b6c892e300053576ea377f785d4",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 93.91,
+    "current_confidence": 93.91,
+    "first_seen": "2026-02-23T14:28:01.199189",
+    "last_seen": "2026-02-23T14:28:01.199189",
+    "observations": [
+      "2026-02-23T14:28:01.199189"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "medium",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "10.10.184.167",
+    "indicator_type": "IP",
+    "initial_confidence": 77.79,
+    "current_confidence": 77.79,
+    "first_seen": "2026-01-24T00:34:34.373446",
+    "last_seen": "2026-01-24T00:34:34.373446",
+    "observations": [
+      "2026-01-24T00:34:34.373446"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "low",
+    "source_reliability": 0.84,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "185.220.36.109",
+    "indicator_type": "IP",
+    "initial_confidence": 94.49,
+    "current_confidence": 94.49,
+    "first_seen": "2026-02-07T19:23:32.721155",
+    "last_seen": "2026-02-21T13:49:59.584741",
+    "observations": [
+      "2026-02-07T19:23:32.721155",
+      "2026-02-11T19:36:07.239339",
+      "2026-02-21T13:49:59.584741"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "critical",
+    "source_reliability": 0.62,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phish-88.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 72.76,
+    "current_confidence": 72.76,
+    "first_seen": "2026-01-10T03:06:15.436554",
+    "last_seen": "2026-01-10T03:06:15.436554",
+    "observations": [
+      "2026-01-10T03:06:15.436554"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "medium",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "172.16.216.164",
+    "indicator_type": "IP",
+    "initial_confidence": 74.52,
+    "current_confidence": 74.52,
+    "first_seen": "2026-02-04T01:18:24.040376",
+    "last_seen": "2026-02-04T01:18:24.040376",
+    "observations": [
+      "2026-02-04T01:18:24.040376"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "low",
+    "source_reliability": 0.78,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "exfil-74.shadow.net",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 86.39,
+    "current_confidence": 86.39,
+    "first_seen": "2026-01-03T08:34:12.444925",
+    "last_seen": "2026-01-03T08:34:12.444925",
+    "observations": [
+      "2026-01-03T08:34:12.444925"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.97,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "91.189.213.233",
+    "indicator_type": "IP",
+    "initial_confidence": 83.29,
+    "current_confidence": 83.29,
+    "first_seen": "2025-12-31T03:21:00.994032",
+    "last_seen": "2025-12-31T03:21:00.994032",
+    "observations": [
+      "2025-12-31T03:21:00.994032"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "high",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "attacker174@proton.black",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 96.76,
+    "current_confidence": 96.76,
+    "first_seen": "2026-02-20T20:39:06.948960",
+    "last_seen": "2026-02-23T02:36:37.981715",
+    "observations": [
+      "2026-02-20T20:39:06.948960",
+      "2026-02-21T07:02:07.306202",
+      "2026-02-21T14:29:37.084729",
+      "2026-02-22T22:49:40.626518",
+      "2026-02-23T02:36:37.981715"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "spam182@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 85.61,
+    "current_confidence": 85.61,
+    "first_seen": "2026-02-09T14:06:20.459281",
+    "last_seen": "2026-02-19T10:42:13.735353",
+    "observations": [
+      "2026-02-09T14:06:20.459281",
+      "2026-02-19T10:42:13.735353"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "medium",
+    "source_reliability": 0.82,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phisher195@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 81.05,
+    "current_confidence": 81.05,
+    "first_seen": "2026-02-01T13:52:04.136541",
+    "last_seen": "2026-02-22T09:38:14.006192",
+    "observations": [
+      "2026-02-01T13:52:04.136541",
+      "2026-02-19T13:09:46.455298",
+      "2026-02-22T09:38:14.006192"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "high",
+    "source_reliability": 0.58,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "3c95ba223305485b44dfa1fcefd2d3bdca79467ae184e5f50cbb7a5183634d59",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 79.62,
+    "current_confidence": 79.62,
+    "first_seen": "2026-01-28T07:21:14.280152",
+    "last_seen": "2026-02-23T14:36:44.908442",
+    "observations": [
+      "2026-01-28T07:21:14.280152",
+      "2026-02-23T14:36:44.908442"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "medium",
+    "source_reliability": 0.76,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "http://c2-101.evil.cc/beacon",
+    "indicator_type": "URL",
+    "initial_confidence": 93.03,
+    "current_confidence": 93.03,
+    "first_seen": "2026-01-15T09:35:58.490117",
+    "last_seen": "2026-01-15T09:35:58.490117",
+    "observations": [
+      "2026-01-15T09:35:58.490117"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "low",
+    "source_reliability": 0.93,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "172.16.83.219",
+    "indicator_type": "IP",
+    "initial_confidence": 77.81,
+    "current_confidence": 77.81,
+    "first_seen": "2026-01-22T06:55:03.439071",
+    "last_seen": "2026-02-14T10:21:12.217539",
+    "observations": [
+      "2026-01-22T06:55:03.439071",
+      "2026-02-14T02:18:39.051084",
+      "2026-02-14T10:21:12.217539"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.55",
+    "indicator_type": "IP",
+    "initial_confidence": 88.0,
+    "current_confidence": 88.0,
+    "first_seen": "2026-01-24T00:51:58.142647",
+    "last_seen": "2026-02-13T21:53:21.733536",
+    "observations": [
+      "2026-01-24T00:51:58.142647",
+      "2026-02-08T23:31:15.451885",
+      "2026-02-12T01:27:16.879286",
+      "2026-02-13T21:53:21.733536"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "critical",
+    "source_reliability": 0.75,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "malops177@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 88.87,
+    "current_confidence": 88.87,
+    "first_seen": "2026-02-23T15:55:05.301743",
+    "last_seen": "2026-02-23T22:38:19.370556",
+    "observations": [
+      "2026-02-23T15:55:05.301743",
+      "2026-02-23T17:43:52.469749",
+      "2026-02-23T22:38:19.370556"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "high",
+    "source_reliability": 0.87,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "4a9d3cb87d5f0ef1f7393e8c6854871f7de569324e96256d7aa4dfa72c2b7e8a",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 93.71,
+    "current_confidence": 93.71,
+    "first_seen": "2026-02-22T03:21:09.505953",
+    "last_seen": "2026-02-23T07:25:44.394915",
+    "observations": [
+      "2026-02-22T03:21:09.505953",
+      "2026-02-23T07:25:44.394915"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "low",
+    "source_reliability": 0.51,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "9e5e0d1fc43990e8a43c67b26752d5f56c8131720fd6fedeb32f7e716739049d",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 70.23,
+    "current_confidence": 70.23,
+    "first_seen": "2026-02-08T06:48:43.691392",
+    "last_seen": "2026-02-18T19:46:32.104724",
+    "observations": [
+      "2026-02-08T06:48:43.691392",
+      "2026-02-13T04:41:39.297097",
+      "2026-02-18T19:46:32.104724"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "critical",
+    "source_reliability": 0.88,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "6e85d7798221a325b13cb7732d0092a09042f990ba417fd2d9cd2a4b5793613d",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 74.19,
+    "current_confidence": 74.19,
+    "first_seen": "2026-01-31T21:52:14.099785",
+    "last_seen": "2026-02-23T04:31:54.561339",
+    "observations": [
+      "2026-01-31T21:52:14.099785",
+      "2026-02-23T04:31:54.561339"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "critical",
+    "source_reliability": 0.96,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "10.10.176.84",
+    "indicator_type": "IP",
+    "initial_confidence": 70.9,
+    "current_confidence": 70.9,
+    "first_seen": "2026-01-06T04:48:00.382120",
+    "last_seen": "2026-01-06T04:48:00.382120",
+    "observations": [
+      "2026-01-06T04:48:00.382120"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "high",
+    "source_reliability": 0.66,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "5d9db4912142b86262abaf872570502df87a6d710c44827bc811cd5d0b8f1dc4",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 92.87,
+    "current_confidence": 92.87,
+    "first_seen": "2026-01-14T06:13:29.395281",
+    "last_seen": "2026-01-14T06:13:29.395281",
+    "observations": [
+      "2026-01-14T06:13:29.395281"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "high",
+    "source_reliability": 0.96,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "185.220.136.65",
+    "indicator_type": "IP",
+    "initial_confidence": 89.09,
+    "current_confidence": 89.09,
+    "first_seen": "2026-02-18T05:37:17.078458",
+    "last_seen": "2026-02-18T05:37:17.078458",
+    "observations": [
+      "2026-02-18T05:37:17.078458"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "high",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "dropper-75.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 88.76,
+    "current_confidence": 88.76,
+    "first_seen": "2026-02-10T16:01:26.191493",
+    "last_seen": "2026-02-20T12:59:58.147499",
+    "observations": [
+      "2026-02-10T16:01:26.191493",
+      "2026-02-20T12:59:58.147499"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "low",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "c2-95.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 95.28,
+    "current_confidence": 95.28,
+    "first_seen": "2026-01-10T04:38:05.035313",
+    "last_seen": "2026-01-10T04:38:05.035313",
+    "observations": [
+      "2026-01-10T04:38:05.035313"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "medium",
+    "source_reliability": 0.97,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "spam185@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 81.33,
+    "current_confidence": 81.33,
+    "first_seen": "2026-01-30T12:10:56.162611",
+    "last_seen": "2026-02-17T02:09:24.177084",
+    "observations": [
+      "2026-01-30T12:10:56.162611",
+      "2026-02-17T02:09:24.177084"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "low",
+    "source_reliability": 0.83,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.109",
+    "indicator_type": "IP",
+    "initial_confidence": 88.85,
+    "current_confidence": 88.85,
+    "first_seen": "2026-01-29T11:34:34.631233",
+    "last_seen": "2026-02-21T11:46:22.613330",
+    "observations": [
+      "2026-01-29T11:34:34.631233",
+      "2026-02-05T14:43:42.043133",
+      "2026-02-21T11:46:22.613330"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "low",
+    "source_reliability": 0.81,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phisher179@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 85.55,
+    "current_confidence": 85.55,
+    "first_seen": "2026-01-12T00:07:06.405182",
+    "last_seen": "2026-01-12T00:07:06.405182",
+    "observations": [
+      "2026-01-12T00:07:06.405182"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.88,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "http://phish-103.example.com/login",
+    "indicator_type": "URL",
+    "initial_confidence": 72.72,
+    "current_confidence": 72.72,
+    "first_seen": "2026-02-09T05:18:36.987608",
+    "last_seen": "2026-02-15T01:58:00.783397",
+    "observations": [
+      "2026-02-09T05:18:36.987608",
+      "2026-02-15T01:58:00.783397"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "low",
+    "source_reliability": 0.78,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "192.0.2.70",
+    "indicator_type": "IP",
+    "initial_confidence": 87.76,
+    "current_confidence": 87.76,
+    "first_seen": "2026-01-09T02:51:55.351560",
+    "last_seen": "2026-01-09T02:51:55.351560",
+    "observations": [
+      "2026-01-09T02:51:55.351560"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.83,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "malops176@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 94.09,
+    "current_confidence": 94.09,
+    "first_seen": "2026-02-10T14:23:43.253742",
+    "last_seen": "2026-02-10T14:23:43.253742",
+    "observations": [
+      "2026-02-10T14:23:43.253742"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phisher183@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 97.42,
+    "current_confidence": 97.42,
+    "first_seen": "2026-01-15T01:20:19.757136",
+    "last_seen": "2026-01-15T01:20:19.757136",
+    "observations": [
+      "2026-01-15T01:20:19.757136"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "high",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "185.220.180.66",
+    "indicator_type": "IP",
+    "initial_confidence": 90.94,
+    "current_confidence": 90.94,
+    "first_seen": "2026-02-05T14:39:10.900651",
+    "last_seen": "2026-02-05T14:39:10.900651",
+    "observations": [
+      "2026-02-05T14:39:10.900651"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "critical",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "203.0.113.231",
+    "indicator_type": "IP",
+    "initial_confidence": 72.88,
+    "current_confidence": 72.88,
+    "first_seen": "2026-02-15T06:23:42.068590",
+    "last_seen": "2026-02-22T03:20:26.910203",
+    "observations": [
+      "2026-02-15T06:23:42.068590",
+      "2026-02-16T17:21:35.144812",
+      "2026-02-22T03:20:26.910203"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "medium",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phish-73.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 88.88,
+    "current_confidence": 88.88,
+    "first_seen": "2026-02-14T20:13:57.219265",
+    "last_seen": "2026-02-22T13:20:56.054873",
+    "observations": [
+      "2026-02-14T20:13:57.219265",
+      "2026-02-19T06:01:25.349945",
+      "2026-02-22T13:20:56.054873"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "low",
+    "source_reliability": 0.74,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://drop-117.malware.io/payload.exe",
+    "indicator_type": "URL",
+    "initial_confidence": 93.67,
+    "current_confidence": 93.67,
+    "first_seen": "2026-02-05T11:03:06.435528",
+    "last_seen": "2026-02-05T11:03:06.435528",
+    "observations": [
+      "2026-02-05T11:03:06.435528"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "high",
+    "source_reliability": 0.76,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "exfil-62.shadow.net",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 72.81,
+    "current_confidence": 72.81,
+    "first_seen": "2026-01-19T00:20:54.980361",
+    "last_seen": "2026-01-19T00:20:54.980361",
+    "observations": [
+      "2026-01-19T00:20:54.980361"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "high",
+    "source_reliability": 0.92,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "c2-86.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 79.48,
+    "current_confidence": 79.48,
+    "first_seen": "2026-01-16T05:33:52.252736",
+    "last_seen": "2026-02-10T17:46:59.500561",
+    "observations": [
+      "2026-01-16T05:33:52.252736",
+      "2026-01-25T06:15:22.454441",
+      "2026-02-10T17:46:59.500561"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "medium",
+    "source_reliability": 0.52,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://exfil-104.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 88.34,
+    "current_confidence": 88.34,
+    "first_seen": "2026-01-12T20:23:46.169417",
+    "last_seen": "2026-01-12T20:23:46.169417",
+    "observations": [
+      "2026-01-12T20:23:46.169417"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "medium",
+    "source_reliability": 0.63,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "dropper-90.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 72.21,
+    "current_confidence": 72.21,
+    "first_seen": "2026-01-08T07:10:52.698267",
+    "last_seen": "2026-01-08T07:10:52.698267",
+    "observations": [
+      "2026-01-08T07:10:52.698267"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "low",
+    "source_reliability": 0.69,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "198.51.100.36",
+    "indicator_type": "IP",
+    "initial_confidence": 89.78,
+    "current_confidence": 89.78,
+    "first_seen": "2026-01-30T17:04:55.767608",
+    "last_seen": "2026-02-19T11:29:21.442380",
+    "observations": [
+      "2026-01-30T17:04:55.767608",
+      "2026-02-14T21:52:26.409013",
+      "2026-02-19T11:29:21.442380"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "critical",
+    "source_reliability": 0.92,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "10.10.111.202",
+    "indicator_type": "IP",
+    "initial_confidence": 82.38,
+    "current_confidence": 82.38,
+    "first_seen": "2026-01-12T06:21:11.705603",
+    "last_seen": "2026-01-12T06:21:11.705603",
+    "observations": [
+      "2026-01-12T06:21:11.705603"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.94,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "http://c2-119.evil.cc/beacon",
+    "indicator_type": "URL",
+    "initial_confidence": 91.35,
+    "current_confidence": 91.35,
+    "first_seen": "2026-02-15T19:14:43.152457",
+    "last_seen": "2026-02-21T01:01:45.927222",
+    "observations": [
+      "2026-02-15T19:14:43.152457",
+      "2026-02-19T19:42:58.704715",
+      "2026-02-21T01:01:45.927222"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "low",
+    "source_reliability": 0.82,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "exfil-98.shadow.net",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 77.63,
+    "current_confidence": 77.63,
+    "first_seen": "2026-01-25T08:46:36.374194",
+    "last_seen": "2026-01-25T08:46:36.374194",
+    "observations": [
+      "2026-01-25T08:46:36.374194"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.97,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phisher173@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 90.59,
+    "current_confidence": 90.59,
+    "first_seen": "2026-02-16T00:19:12.440890",
+    "last_seen": "2026-02-21T10:34:51.762043",
+    "observations": [
+      "2026-02-16T00:19:12.440890",
+      "2026-02-17T23:43:20.347313",
+      "2026-02-21T10:34:51.762043"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "dropper-72.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 89.59,
+    "current_confidence": 89.59,
+    "first_seen": "2026-01-27T10:52:08.862371",
+    "last_seen": "2026-02-23T00:16:55.648237",
+    "observations": [
+      "2026-01-27T10:52:08.862371",
+      "2026-02-22T00:08:08.403033",
+      "2026-02-23T00:16:55.648237"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "low",
+    "source_reliability": 0.71,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "http://phish-110.example.com/login",
+    "indicator_type": "URL",
+    "initial_confidence": 73.05,
+    "current_confidence": 73.05,
+    "first_seen": "2026-01-10T10:23:48.406753",
+    "last_seen": "2026-01-10T10:23:48.406753",
+    "observations": [
+      "2026-01-10T10:23:48.406753"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "high",
+    "source_reliability": 0.56,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "http://c2-130.evil.cc/beacon",
+    "indicator_type": "URL",
+    "initial_confidence": 71.91,
+    "current_confidence": 71.91,
+    "first_seen": "2026-01-17T12:29:55.554061",
+    "last_seen": "2026-01-17T12:29:55.554061",
+    "observations": [
+      "2026-01-17T12:29:55.554061"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "high",
+    "source_reliability": 0.81,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "791459be6a4f0c270de83c8b9a5af146a630be8b895d3f760288851848c47673",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 89.08,
+    "current_confidence": 89.08,
+    "first_seen": "2026-01-12T08:12:34.478207",
+    "last_seen": "2026-02-21T09:45:17.047544",
+    "observations": [
+      "2026-01-12T08:12:34.478207",
+      "2026-02-21T09:45:17.047544"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "low",
+    "source_reliability": 0.85,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "http://c2-108.evil.cc/beacon",
+    "indicator_type": "URL",
+    "initial_confidence": 77.02,
+    "current_confidence": 77.02,
+    "first_seen": "2026-02-09T04:47:31.049514",
+    "last_seen": "2026-02-09T04:47:31.049514",
+    "observations": [
+      "2026-02-09T04:47:31.049514"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.67,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "malops188@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 94.6,
+    "current_confidence": 94.6,
+    "first_seen": "2026-02-21T10:45:33.467013",
+    "last_seen": "2026-02-23T19:24:41.306636",
+    "observations": [
+      "2026-02-21T10:45:33.467013",
+      "2026-02-22T05:50:09.511879",
+      "2026-02-23T19:24:41.306636"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "attacker172@proton.black",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 79.58,
+    "current_confidence": 79.58,
+    "first_seen": "2026-01-25T01:09:48.216048",
+    "last_seen": "2026-02-19T01:44:49.415581",
+    "observations": [
+      "2026-01-25T01:09:48.216048",
+      "2026-02-18T02:35:52.785077",
+      "2026-02-19T01:44:49.415581"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "medium",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "c2-66.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 86.98,
+    "current_confidence": 86.98,
+    "first_seen": "2026-02-04T06:17:11.400997",
+    "last_seen": "2026-02-04T06:17:11.400997",
+    "observations": [
+      "2026-02-04T06:17:11.400997"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "medium",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phisher200@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 76.92,
+    "current_confidence": 76.92,
+    "first_seen": "2026-01-16T00:01:36.027985",
+    "last_seen": "2026-02-05T17:00:17.698495",
+    "observations": [
+      "2026-01-16T00:01:36.027985",
+      "2026-02-05T17:00:17.698495"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.94,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "exfil-78.shadow.net",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 94.66,
+    "current_confidence": 94.66,
+    "first_seen": "2026-02-12T11:29:31.274920",
+    "last_seen": "2026-02-23T20:35:49.240743",
+    "observations": [
+      "2026-02-12T11:29:31.274920",
+      "2026-02-15T17:05:06.134593",
+      "2026-02-16T15:21:55.608594",
+      "2026-02-20T18:40:03.347329",
+      "2026-02-23T20:35:49.240743"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.94,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "exfil-81.shadow.net",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 93.92,
+    "current_confidence": 93.92,
+    "first_seen": "2026-02-17T19:38:46.948294",
+    "last_seen": "2026-02-17T19:38:46.948294",
+    "observations": [
+      "2026-02-17T19:38:46.948294"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "high",
+    "source_reliability": 0.65,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://drop-120.malware.io/payload.exe",
+    "indicator_type": "URL",
+    "initial_confidence": 84.85,
+    "current_confidence": 84.85,
+    "first_seen": "2026-01-01T07:47:52.657587",
+    "last_seen": "2026-01-01T07:47:52.657587",
+    "observations": [
+      "2026-01-01T07:47:52.657587"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.85,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "9517054af1969fb0e9398f7cdf1a0bf895e6ca0a55864df921ae4aa2b18a52bf",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 88.77,
+    "current_confidence": 88.77,
+    "first_seen": "2025-12-29T01:32:37.291974",
+    "last_seen": "2025-12-29T01:32:37.291974",
+    "observations": [
+      "2025-12-29T01:32:37.291974"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.82,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "592fdcf820090759c52cd02b21851ba955fb6a75b8e95ad6b420b9dc925c9a17",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 79.71,
+    "current_confidence": 79.71,
+    "first_seen": "2026-02-19T17:17:42.854018",
+    "last_seen": "2026-02-20T20:03:00.998188",
+    "observations": [
+      "2026-02-19T17:17:42.854018",
+      "2026-02-20T20:03:00.998188"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.68,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "4829dd284e11080969e88f7c53cb47868adc92872fafb75371503e5770f5b8dd",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 74.87,
+    "current_confidence": 74.87,
+    "first_seen": "2026-01-25T01:27:28.504956",
+    "last_seen": "2026-02-10T01:52:49.329587",
+    "observations": [
+      "2026-01-25T01:27:28.504956",
+      "2026-02-10T01:52:49.329587"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "medium",
+    "source_reliability": 0.94,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "attacker181@proton.black",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 71.68,
+    "current_confidence": 71.68,
+    "first_seen": "2026-01-27T09:04:42.783880",
+    "last_seen": "2026-02-12T19:36:12.356595",
+    "observations": [
+      "2026-01-27T09:04:42.783880",
+      "2026-02-12T19:36:12.356595"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "203.0.113.171",
+    "indicator_type": "IP",
+    "initial_confidence": 94.59,
+    "current_confidence": 94.59,
+    "first_seen": "2025-12-29T09:53:33.909636",
+    "last_seen": "2025-12-29T09:53:33.909636",
+    "observations": [
+      "2025-12-29T09:53:33.909636"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "high",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "172.16.253.21",
+    "indicator_type": "IP",
+    "initial_confidence": 82.7,
+    "current_confidence": 82.7,
+    "first_seen": "2026-01-01T16:13:10.559617",
+    "last_seen": "2026-01-01T16:13:10.559617",
+    "observations": [
+      "2026-01-01T16:13:10.559617"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "medium",
+    "source_reliability": 0.77,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "124cc2a515b4c544d7d9f1e8d640d2369e75bc7a2a04c2c7c19a6f603505d3aa",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 79.64,
+    "current_confidence": 79.64,
+    "first_seen": "2026-01-16T20:32:50.401446",
+    "last_seen": "2026-02-18T06:23:26.994554",
+    "observations": [
+      "2026-01-16T20:32:50.401446",
+      "2026-02-18T06:23:26.994554"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "critical",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "185.220.55.139",
+    "indicator_type": "IP",
+    "initial_confidence": 85.99,
+    "current_confidence": 85.99,
+    "first_seen": "2026-01-22T06:10:04.936484",
+    "last_seen": "2026-02-21T05:17:17.508626",
+    "observations": [
+      "2026-01-22T06:10:04.936484",
+      "2026-02-21T05:17:17.508626"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.94,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "3bd0e6de0dc2bd4049e57a8e284c5bab054a39a66561f7e0674599453a72aeec",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 96.34,
+    "current_confidence": 96.34,
+    "first_seen": "2026-01-19T20:54:03.782653",
+    "last_seen": "2026-02-09T14:46:01.787322",
+    "observations": [
+      "2026-01-19T20:54:03.782653",
+      "2026-02-08T21:09:38.910596",
+      "2026-02-09T14:46:01.787322"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "high",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "dropper-91.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 77.11,
+    "current_confidence": 77.11,
+    "first_seen": "2026-02-03T06:36:25.159236",
+    "last_seen": "2026-02-03T06:36:25.159236",
+    "observations": [
+      "2026-02-03T06:36:25.159236"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.93,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "dropper-67.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 94.08,
+    "current_confidence": 94.08,
+    "first_seen": "2026-02-06T06:59:16.210109",
+    "last_seen": "2026-02-14T06:48:34.207734",
+    "observations": [
+      "2026-02-06T06:59:16.210109",
+      "2026-02-14T06:48:34.207734"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "low",
+    "source_reliability": 0.76,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.126",
+    "indicator_type": "IP",
+    "initial_confidence": 97.59,
+    "current_confidence": 97.59,
+    "first_seen": "2026-02-11T07:05:46.160045",
+    "last_seen": "2026-02-23T05:00:25.751997",
+    "observations": [
+      "2026-02-11T07:05:46.160045",
+      "2026-02-13T04:08:39.574613",
+      "2026-02-23T00:29:43.943489",
+      "2026-02-23T05:00:25.751997"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "medium",
+    "source_reliability": 0.86,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.113",
+    "indicator_type": "IP",
+    "initial_confidence": 79.47,
+    "current_confidence": 79.47,
+    "first_seen": "2026-02-07T22:47:41.873849",
+    "last_seen": "2026-02-07T22:47:41.873849",
+    "observations": [
+      "2026-02-07T22:47:41.873849"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "medium",
+    "source_reliability": 0.97,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phish-99.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 96.96,
+    "current_confidence": 96.96,
+    "first_seen": "2026-01-26T10:50:00.082861",
+    "last_seen": "2026-01-26T10:50:00.082861",
+    "observations": [
+      "2026-01-26T10:50:00.082861"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "critical",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "198.51.100.149",
+    "indicator_type": "IP",
+    "initial_confidence": 80.51,
+    "current_confidence": 80.51,
+    "first_seen": "2026-01-16T05:02:38.133258",
+    "last_seen": "2026-01-16T05:02:38.133258",
+    "observations": [
+      "2026-01-16T05:02:38.133258"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.87,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "93818c4fa1f6c5fc3880257798592fb45d8b4d5af9cbb07fcc9b92a9d2a0f105",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 81.49,
+    "current_confidence": 81.49,
+    "first_seen": "2026-01-17T00:32:22.760115",
+    "last_seen": "2026-01-30T21:02:32.918794",
+    "observations": [
+      "2026-01-17T00:32:22.760115",
+      "2026-01-30T21:02:32.918794"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.160",
+    "indicator_type": "IP",
+    "initial_confidence": 84.2,
+    "current_confidence": 84.2,
+    "first_seen": "2026-02-07T18:26:58.636330",
+    "last_seen": "2026-02-07T18:26:58.636330",
+    "observations": [
+      "2026-02-07T18:26:58.636330"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "medium",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "mal-79.evil.cc",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 73.29,
+    "current_confidence": 73.29,
+    "first_seen": "2026-01-03T11:35:14.339959",
+    "last_seen": "2026-01-03T11:35:14.339959",
+    "observations": [
+      "2026-01-03T11:35:14.339959"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.97,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "http://c2-121.evil.cc/beacon",
+    "indicator_type": "URL",
+    "initial_confidence": 96.36,
+    "current_confidence": 96.36,
+    "first_seen": "2026-02-14T06:26:39.543733",
+    "last_seen": "2026-02-23T13:32:23.706292",
+    "observations": [
+      "2026-02-14T06:26:39.543733",
+      "2026-02-23T13:32:23.706292"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "medium",
+    "source_reliability": 0.78,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://exfil-116.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 86.81,
+    "current_confidence": 86.81,
+    "first_seen": "2026-01-13T02:38:36.795748",
+    "last_seen": "2026-01-13T02:38:36.795748",
+    "observations": [
+      "2026-01-13T02:38:36.795748"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "high",
+    "source_reliability": 0.65,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "aa460cc0ea904c4fa66547ad618ad5a9411fad4be42cecc9aabaf4660b93b38c",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 93.67,
+    "current_confidence": 93.67,
+    "first_seen": "2026-01-06T11:37:49.728690",
+    "last_seen": "2026-01-06T11:37:49.728690",
+    "observations": [
+      "2026-01-06T11:37:49.728690"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "medium",
+    "source_reliability": 0.64,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "23f7321d1cde05c262dcc276a374b784c7d5ff7468fdc24ad81dd4c4e26f3750",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 76.6,
+    "current_confidence": 76.6,
+    "first_seen": "2026-01-27T09:21:02.190978",
+    "last_seen": "2026-02-07T20:22:24.791914",
+    "observations": [
+      "2026-01-27T09:21:02.190978",
+      "2026-01-31T20:52:11.649541",
+      "2026-02-03T03:31:41.913721",
+      "2026-02-07T20:22:24.791914"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "low",
+    "source_reliability": 0.86,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "172.16.34.239",
+    "indicator_type": "IP",
+    "initial_confidence": 76.84,
+    "current_confidence": 76.84,
+    "first_seen": "2026-02-21T14:12:55.066283",
+    "last_seen": "2026-02-22T16:11:20.195996",
+    "observations": [
+      "2026-02-21T14:12:55.066283",
+      "2026-02-22T16:11:20.195996"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "f5beccdca9c885e1de382d7ab7e702698a4040316b80ef7422abf5e7e61fd2d1",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 97.4,
+    "current_confidence": 97.4,
+    "first_seen": "2026-01-16T05:49:50.697485",
+    "last_seen": "2026-01-16T05:49:50.697485",
+    "observations": [
+      "2026-01-16T05:49:50.697485"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "medium",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "mal-69.evil.cc",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 86.63,
+    "current_confidence": 86.63,
+    "first_seen": "2026-02-05T23:30:59.196841",
+    "last_seen": "2026-02-16T15:16:30.091804",
+    "observations": [
+      "2026-02-05T23:30:59.196841",
+      "2026-02-12T14:22:20.988022",
+      "2026-02-16T15:16:30.091804"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "high",
+    "source_reliability": 0.91,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "c2-85.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 79.3,
+    "current_confidence": 79.3,
+    "first_seen": "2026-01-16T09:15:37.992349",
+    "last_seen": "2026-02-23T11:11:56.752950",
+    "observations": [
+      "2026-01-16T09:15:37.992349",
+      "2026-02-23T11:11:56.752950"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "critical",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://exfil-114.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 81.65,
+    "current_confidence": 81.65,
+    "first_seen": "2026-02-10T09:28:50.843664",
+    "last_seen": "2026-02-22T03:08:39.886690",
+    "observations": [
+      "2026-02-10T09:28:50.843664",
+      "2026-02-19T10:00:18.622590",
+      "2026-02-22T03:08:39.886690"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "critical",
+    "source_reliability": 0.91,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "c24db2b7014d8b814406c71e908326936a1f188f867af40c5bacb508d2c7bac1",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 71.23,
+    "current_confidence": 71.23,
+    "first_seen": "2026-01-13T23:32:56.957799",
+    "last_seen": "2026-01-13T23:32:56.957799",
+    "observations": [
+      "2026-01-13T23:32:56.957799"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.81,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "29deca85083cc69bcb1273d4e63bc910ab552a4d654ac6c758445bbdab7b2365",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 89.79,
+    "current_confidence": 89.79,
+    "first_seen": "2026-01-16T15:53:03.193741",
+    "last_seen": "2026-01-26T14:15:31.284158",
+    "observations": [
+      "2026-01-16T15:53:03.193741",
+      "2026-01-26T14:15:31.284158"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.5,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "4b95ef5e53fe63b2b925a0e480faa0b66872ba4aa492d1b11133483b4073e50a",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 74.18,
+    "current_confidence": 74.18,
+    "first_seen": "2025-12-31T18:24:17.932244",
+    "last_seen": "2025-12-31T18:24:17.932244",
+    "observations": [
+      "2025-12-31T18:24:17.932244"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "critical",
+    "source_reliability": 0.62,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://exfil-106.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 96.57,
+    "current_confidence": 96.57,
+    "first_seen": "2026-01-25T22:53:27.777573",
+    "last_seen": "2026-02-22T16:16:01.706717",
+    "observations": [
+      "2026-01-25T22:53:27.777573",
+      "2026-01-29T14:44:16.599112",
+      "2026-02-22T16:16:01.706717"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "medium",
+    "source_reliability": 0.93,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "spam196@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 92.65,
+    "current_confidence": 92.65,
+    "first_seen": "2026-01-25T06:47:24.660795",
+    "last_seen": "2026-02-21T01:09:48.566711",
+    "observations": [
+      "2026-01-25T06:47:24.660795",
+      "2026-02-21T01:09:48.566711"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "high",
+    "source_reliability": 0.84,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "76a7826c8f2aecb5f881098f4be56a823d32cddef78411b752a19e5794995560",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 90.71,
+    "current_confidence": 90.71,
+    "first_seen": "2026-02-11T19:35:09.853611",
+    "last_seen": "2026-02-20T01:35:20.625320",
+    "observations": [
+      "2026-02-11T19:35:09.853611",
+      "2026-02-14T08:57:52.413860",
+      "2026-02-18T22:11:27.667710",
+      "2026-02-20T01:35:20.625320"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "high",
+    "source_reliability": 0.85,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "ab503b5cb07626e56dc9c37c00415e21ff5feb6a9605f68e8a41687001da713a",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 91.98,
+    "current_confidence": 91.98,
+    "first_seen": "2026-01-13T10:12:02.350946",
+    "last_seen": "2026-01-13T10:12:02.350946",
+    "observations": [
+      "2026-01-13T10:12:02.350946"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.55,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "spam186@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 91.87,
+    "current_confidence": 91.87,
+    "first_seen": "2026-01-25T23:53:24.375889",
+    "last_seen": "2026-01-25T23:53:24.375889",
+    "observations": [
+      "2026-01-25T23:53:24.375889"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "low",
+    "source_reliability": 0.57,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://drop-129.malware.io/payload.exe",
+    "indicator_type": "URL",
+    "initial_confidence": 75.52,
+    "current_confidence": 75.52,
+    "first_seen": "2026-02-19T14:33:36.586224",
+    "last_seen": "2026-02-22T03:58:21.999380",
+    "observations": [
+      "2026-02-19T14:33:36.586224",
+      "2026-02-22T03:58:21.999380"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "medium",
+    "source_reliability": 0.52,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "b39bf3212bfcffab8442bb253fc37597f2e16b7669251782d89c28dd842e3f84",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 96.78,
+    "current_confidence": 96.78,
+    "first_seen": "2026-02-13T04:52:53.278616",
+    "last_seen": "2026-02-23T02:12:42.736970",
+    "observations": [
+      "2026-02-13T04:52:53.278616",
+      "2026-02-23T02:12:42.736970"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.56,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "e499da86bcb1b5131999f5ac7386296c43146c2651f7c116881189cd06cb8f38",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 77.53,
+    "current_confidence": 77.53,
+    "first_seen": "2026-02-14T16:15:27.706595",
+    "last_seen": "2026-02-21T16:25:48.322549",
+    "observations": [
+      "2026-02-14T16:15:27.706595",
+      "2026-02-21T16:25:48.322549"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.71,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phisher198@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 76.08,
+    "current_confidence": 76.08,
+    "first_seen": "2026-02-23T09:51:50.929178",
+    "last_seen": "2026-02-23T23:35:46.434642",
+    "observations": [
+      "2026-02-23T09:51:50.929178",
+      "2026-02-23T15:08:00.271917",
+      "2026-02-23T23:35:46.434642"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "198.51.100.7",
+    "indicator_type": "IP",
+    "initial_confidence": 90.62,
+    "current_confidence": 90.62,
+    "first_seen": "2026-02-16T04:30:10.727838",
+    "last_seen": "2026-02-23T18:38:12.329078",
+    "observations": [
+      "2026-02-16T04:30:10.727838",
+      "2026-02-23T18:38:12.329078"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "medium",
+    "source_reliability": 0.62,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "185.220.143.195",
+    "indicator_type": "IP",
+    "initial_confidence": 89.93,
+    "current_confidence": 89.93,
+    "first_seen": "2026-02-07T08:04:54.432989",
+    "last_seen": "2026-02-20T08:25:40.980976",
+    "observations": [
+      "2026-02-07T08:04:54.432989",
+      "2026-02-17T22:26:43.299363",
+      "2026-02-20T08:25:40.980976"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.77,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "203.0.113.220",
+    "indicator_type": "IP",
+    "initial_confidence": 91.1,
+    "current_confidence": 91.1,
+    "first_seen": "2026-02-21T04:27:44.315593",
+    "last_seen": "2026-02-21T04:27:44.315593",
+    "observations": [
+      "2026-02-21T04:27:44.315593"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "low",
+    "source_reliability": 0.96,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "http://phish-127.example.com/login",
+    "indicator_type": "URL",
+    "initial_confidence": 81.21,
+    "current_confidence": 81.21,
+    "first_seen": "2026-02-11T00:35:10.987907",
+    "last_seen": "2026-02-11T00:35:10.987907",
+    "observations": [
+      "2026-02-11T00:35:10.987907"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "critical",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "91.189.174.252",
+    "indicator_type": "IP",
+    "initial_confidence": 77.31,
+    "current_confidence": 77.31,
+    "first_seen": "2026-02-16T23:36:31.049919",
+    "last_seen": "2026-02-16T23:36:31.049919",
+    "observations": [
+      "2026-02-16T23:36:31.049919"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "medium",
+    "source_reliability": 0.66,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "http://c2-105.evil.cc/beacon",
+    "indicator_type": "URL",
+    "initial_confidence": 82.41,
+    "current_confidence": 82.41,
+    "first_seen": "2026-02-12T21:13:06.346960",
+    "last_seen": "2026-02-20T09:52:52.271320",
+    "observations": [
+      "2026-02-12T21:13:06.346960",
+      "2026-02-18T13:16:18.797717",
+      "2026-02-20T09:52:52.271320"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "low",
+    "source_reliability": 0.84,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "172.16.142.33",
+    "indicator_type": "IP",
+    "initial_confidence": 80.62,
+    "current_confidence": 80.62,
+    "first_seen": "2026-01-31T17:27:33.390941",
+    "last_seen": "2026-02-17T15:14:46.028562",
+    "observations": [
+      "2026-01-31T17:27:33.390941",
+      "2026-02-15T11:52:17.158257",
+      "2026-02-17T15:14:46.028562"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "medium",
+    "source_reliability": 0.82,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.205",
+    "indicator_type": "IP",
+    "initial_confidence": 89.63,
+    "current_confidence": 89.63,
+    "first_seen": "2026-01-24T04:31:52.381211",
+    "last_seen": "2026-02-21T15:01:21.714567",
+    "observations": [
+      "2026-01-24T04:31:52.381211",
+      "2026-02-21T15:01:21.714567"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.85,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "185.220.124.55",
+    "indicator_type": "IP",
+    "initial_confidence": 70.06,
+    "current_confidence": 70.06,
+    "first_seen": "2025-12-30T21:04:06.820994",
+    "last_seen": "2025-12-30T21:04:06.820994",
+    "observations": [
+      "2025-12-30T21:04:06.820994"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.84,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "c2-68.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 88.49,
+    "current_confidence": 88.49,
+    "first_seen": "2026-01-31T16:31:24.997474",
+    "last_seen": "2026-01-31T16:31:24.997474",
+    "observations": [
+      "2026-01-31T16:31:24.997474"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.81,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "192.0.2.131",
+    "indicator_type": "IP",
+    "initial_confidence": 73.07,
+    "current_confidence": 73.07,
+    "first_seen": "2026-02-22T08:25:20.080716",
+    "last_seen": "2026-02-23T10:17:40.546040",
+    "observations": [
+      "2026-02-22T08:25:20.080716",
+      "2026-02-23T10:17:40.546040"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "medium",
+    "source_reliability": 0.58,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "185.220.40.49",
+    "indicator_type": "IP",
+    "initial_confidence": 86.22,
+    "current_confidence": 86.22,
+    "first_seen": "2026-01-21T02:17:02.880333",
+    "last_seen": "2026-02-06T04:10:51.168873",
+    "observations": [
+      "2026-01-21T02:17:02.880333",
+      "2026-02-06T04:10:51.168873"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "high",
+    "source_reliability": 0.51,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phisher180@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 81.8,
+    "current_confidence": 81.8,
+    "first_seen": "2026-02-23T14:38:50.641967",
+    "last_seen": "2026-02-23T21:28:28.237529",
+    "observations": [
+      "2026-02-23T14:38:50.641967",
+      "2026-02-23T17:23:22.509762",
+      "2026-02-23T21:28:28.237529"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "critical",
+    "source_reliability": 0.6,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "http://c2-111.evil.cc/beacon",
+    "indicator_type": "URL",
+    "initial_confidence": 81.25,
+    "current_confidence": 81.25,
+    "first_seen": "2026-02-20T04:02:07.703118",
+    "last_seen": "2026-02-20T04:02:07.703118",
+    "observations": [
+      "2026-02-20T04:02:07.703118"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.92,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://exfil-118.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 87.18,
+    "current_confidence": 87.18,
+    "first_seen": "2026-01-01T04:42:41.158088",
+    "last_seen": "2026-01-01T04:42:41.158088",
+    "observations": [
+      "2026-01-01T04:42:41.158088"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "medium",
+    "source_reliability": 0.87,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "malops184@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 82.99,
+    "current_confidence": 82.99,
+    "first_seen": "2026-02-19T02:10:35.600522",
+    "last_seen": "2026-02-19T02:10:35.600522",
+    "observations": [
+      "2026-02-19T02:10:35.600522"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "low",
+    "source_reliability": 0.83,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://drop-107.malware.io/payload.exe",
+    "indicator_type": "URL",
+    "initial_confidence": 75.8,
+    "current_confidence": 75.8,
+    "first_seen": "2026-02-01T01:05:12.081697",
+    "last_seen": "2026-02-11T16:29:57.141085",
+    "observations": [
+      "2026-02-01T01:05:12.081697",
+      "2026-02-07T16:58:23.133266",
+      "2026-02-11T16:29:57.141085"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "high",
+    "source_reliability": 0.92,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "malops197@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 71.39,
+    "current_confidence": 71.39,
+    "first_seen": "2026-02-23T05:22:49.507114",
+    "last_seen": "2026-02-23T19:29:20.145804",
+    "observations": [
+      "2026-02-23T05:22:49.507114",
+      "2026-02-23T19:29:20.145804"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "91.189.1.134",
+    "indicator_type": "IP",
+    "initial_confidence": 90.77,
+    "current_confidence": 90.77,
+    "first_seen": "2026-01-18T01:51:27.372559",
+    "last_seen": "2026-01-18T01:51:27.372559",
+    "observations": [
+      "2026-01-18T01:51:27.372559"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "medium",
+    "source_reliability": 0.91,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "fb797206d6d76da949b7265bafc54c5e3f2c0bf3cd1dca2442667998ed60fbc9",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 88.61,
+    "current_confidence": 88.61,
+    "first_seen": "2026-01-26T04:07:46.858061",
+    "last_seen": "2026-01-26T04:07:46.858061",
+    "observations": [
+      "2026-01-26T04:07:46.858061"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "high",
+    "source_reliability": 0.56,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "exfil-94.shadow.net",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 89.58,
+    "current_confidence": 89.58,
+    "first_seen": "2026-02-12T03:57:45.019414",
+    "last_seen": "2026-02-17T23:19:46.005271",
+    "observations": [
+      "2026-02-12T03:57:45.019414",
+      "2026-02-17T23:19:46.005271"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "critical",
+    "source_reliability": 0.58,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "198.51.100.200",
+    "indicator_type": "IP",
+    "initial_confidence": 89.49,
+    "current_confidence": 89.49,
+    "first_seen": "2026-01-26T20:32:51.794932",
+    "last_seen": "2026-02-12T10:30:49.095585",
+    "observations": [
+      "2026-01-26T20:32:51.794932",
+      "2026-02-12T10:30:49.095585"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "high",
+    "source_reliability": 0.65,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "172.16.197.200",
+    "indicator_type": "IP",
+    "initial_confidence": 72.17,
+    "current_confidence": 72.17,
+    "first_seen": "2026-01-13T15:54:06.752239",
+    "last_seen": "2026-01-13T15:54:06.752239",
+    "observations": [
+      "2026-01-13T15:54:06.752239"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "high",
+    "source_reliability": 0.72,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phish-70.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 96.14,
+    "current_confidence": 96.14,
+    "first_seen": "2026-01-14T23:56:39.527240",
+    "last_seen": "2026-01-14T23:56:39.527240",
+    "observations": [
+      "2026-01-14T23:56:39.527240"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "high",
+    "source_reliability": 0.64,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "10.10.125.57",
+    "indicator_type": "IP",
+    "initial_confidence": 80.89,
+    "current_confidence": 80.89,
+    "first_seen": "2026-02-07T00:03:38.610753",
+    "last_seen": "2026-02-15T19:53:56.380301",
+    "observations": [
+      "2026-02-07T00:03:38.610753",
+      "2026-02-09T22:23:40.460323",
+      "2026-02-15T19:53:56.380301"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "medium",
+    "source_reliability": 0.99,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "203.0.113.22",
+    "indicator_type": "IP",
+    "initial_confidence": 75.09,
+    "current_confidence": 75.09,
+    "first_seen": "2026-01-24T15:50:41.500680",
+    "last_seen": "2026-02-16T09:38:50.690043",
+    "observations": [
+      "2026-01-24T15:50:41.500680",
+      "2026-02-14T18:49:21.062803",
+      "2026-02-16T09:38:50.690043"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "high",
+    "source_reliability": 0.86,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "http://phish-126.example.com/login",
+    "indicator_type": "URL",
+    "initial_confidence": 96.53,
+    "current_confidence": 96.53,
+    "first_seen": "2026-01-01T14:07:36.294653",
+    "last_seen": "2026-01-01T14:07:36.294653",
+    "observations": [
+      "2026-01-01T14:07:36.294653"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "high",
+    "source_reliability": 0.63,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "dropper-76.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 73.25,
+    "current_confidence": 73.25,
+    "first_seen": "2026-02-13T21:41:49.571144",
+    "last_seen": "2026-02-18T00:34:56.225490",
+    "observations": [
+      "2026-02-13T21:41:49.571144",
+      "2026-02-18T00:34:56.225490"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "medium",
+    "source_reliability": 0.76,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "spam190@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 96.18,
+    "current_confidence": 96.18,
+    "first_seen": "2026-01-22T21:51:22.795478",
+    "last_seen": "2026-01-22T21:51:22.795478",
+    "observations": [
+      "2026-01-22T21:51:22.795478"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "fa6cf604889976c985016f1f2473777b54c1daa2f3228f362a609396b3cc11d2",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 77.35,
+    "current_confidence": 77.35,
+    "first_seen": "2026-01-29T20:02:00.393676",
+    "last_seen": "2026-02-10T16:55:18.858274",
+    "observations": [
+      "2026-01-29T20:02:00.393676",
+      "2026-02-10T11:30:16.650288",
+      "2026-02-10T16:55:18.858274"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "low",
+    "source_reliability": 0.79,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "4f978ca153ae30e6c14b08c8874a511fc8a3a3ad3deb6d1a0b01241de6765610",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 90.89,
+    "current_confidence": 90.89,
+    "first_seen": "2026-02-20T12:31:34.968710",
+    "last_seen": "2026-02-23T17:30:04.271153",
+    "observations": [
+      "2026-02-20T12:31:34.968710",
+      "2026-02-23T16:01:35.162102",
+      "2026-02-23T17:30:04.271153"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "critical",
+    "source_reliability": 0.87,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "spam192@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 72.51,
+    "current_confidence": 72.51,
+    "first_seen": "2026-01-22T06:56:07.668425",
+    "last_seen": "2026-01-22T06:56:07.668425",
+    "observations": [
+      "2026-01-22T06:56:07.668425"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "high",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "91.189.89.187",
+    "indicator_type": "IP",
+    "initial_confidence": 73.24,
+    "current_confidence": 73.24,
+    "first_seen": "2026-01-23T04:19:38.421679",
+    "last_seen": "2026-01-23T04:19:38.421679",
+    "observations": [
+      "2026-01-23T04:19:38.421679"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "0c41b9175795419b380d3762ed8eb656b4158e2cff174d5803949797c3ec3063",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 94.56,
+    "current_confidence": 94.56,
+    "first_seen": "2026-01-08T19:45:44.319229",
+    "last_seen": "2026-02-19T16:19:11.283990",
+    "observations": [
+      "2026-01-08T19:45:44.319229",
+      "2026-01-19T17:11:22.594065",
+      "2026-01-24T18:39:56.149514",
+      "2026-02-19T16:19:11.283990"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "low",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "c2-97.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 86.23,
+    "current_confidence": 86.23,
+    "first_seen": "2026-02-06T08:48:35.054797",
+    "last_seen": "2026-02-21T21:39:50.883995",
+    "observations": [
+      "2026-02-06T08:48:35.054797",
+      "2026-02-12T03:18:21.739895",
+      "2026-02-21T05:06:13.497213",
+      "2026-02-21T21:39:50.883995"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "medium",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "10.10.172.69",
+    "indicator_type": "IP",
+    "initial_confidence": 84.96,
+    "current_confidence": 84.96,
+    "first_seen": "2026-02-18T22:05:03.007198",
+    "last_seen": "2026-02-18T22:05:03.007198",
+    "observations": [
+      "2026-02-18T22:05:03.007198"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.86,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "91.189.65.214",
+    "indicator_type": "IP",
+    "initial_confidence": 85.1,
+    "current_confidence": 85.1,
+    "first_seen": "2026-02-23T07:43:04.939961",
+    "last_seen": "2026-02-23T12:33:07.180103",
+    "observations": [
+      "2026-02-23T07:43:04.939961",
+      "2026-02-23T12:33:07.180103"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "low",
+    "source_reliability": 0.86,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://exfil-113.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 93.88,
+    "current_confidence": 93.88,
+    "first_seen": "2026-02-02T22:43:07.747129",
+    "last_seen": "2026-02-15T20:25:27.755865",
+    "observations": [
+      "2026-02-02T22:43:07.747129",
+      "2026-02-15T20:25:27.755865"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "medium",
+    "source_reliability": 0.74,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phish-89.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 78.21,
+    "current_confidence": 78.21,
+    "first_seen": "2026-02-07T03:50:55.212252",
+    "last_seen": "2026-02-07T03:50:55.212252",
+    "observations": [
+      "2026-02-07T03:50:55.212252"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.75,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "d3b0859a97708084f0dace11238d46569f3adadc16800276c9d1803de701ee90",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 86.44,
+    "current_confidence": 86.44,
+    "first_seen": "2026-01-18T23:49:58.287683",
+    "last_seen": "2026-01-18T23:49:58.287683",
+    "observations": [
+      "2026-01-18T23:49:58.287683"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "medium",
+    "source_reliability": 0.61,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "c2-82.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 86.43,
+    "current_confidence": 86.43,
+    "first_seen": "2026-02-12T01:23:10.983189",
+    "last_seen": "2026-02-20T06:58:28.204539",
+    "observations": [
+      "2026-02-12T01:23:10.983189",
+      "2026-02-18T05:04:18.933281",
+      "2026-02-20T06:58:28.204539"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "low",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.122",
+    "indicator_type": "IP",
+    "initial_confidence": 79.26,
+    "current_confidence": 79.26,
+    "first_seen": "2026-01-23T17:23:43.529113",
+    "last_seen": "2026-01-23T17:23:43.529113",
+    "observations": [
+      "2026-01-23T17:23:43.529113"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "medium",
+    "source_reliability": 0.71,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "http://phish-125.example.com/login",
+    "indicator_type": "URL",
+    "initial_confidence": 82.02,
+    "current_confidence": 82.02,
+    "first_seen": "2026-02-21T11:53:32.492076",
+    "last_seen": "2026-02-21T11:53:32.492076",
+    "observations": [
+      "2026-02-21T11:53:32.492076"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.58,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "10.10.58.7",
+    "indicator_type": "IP",
+    "initial_confidence": 71.94,
+    "current_confidence": 71.94,
+    "first_seen": "2026-01-25T01:50:26.972600",
+    "last_seen": "2026-01-25T01:50:26.972600",
+    "observations": [
+      "2026-01-25T01:50:26.972600"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "medium",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "203.0.113.24",
+    "indicator_type": "IP",
+    "initial_confidence": 70.1,
+    "current_confidence": 70.1,
+    "first_seen": "2026-02-14T07:35:19.002708",
+    "last_seen": "2026-02-19T04:36:17.527559",
+    "observations": [
+      "2026-02-14T07:35:19.002708",
+      "2026-02-17T12:57:23.565942",
+      "2026-02-19T04:36:17.527559"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "medium",
+    "source_reliability": 0.7,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "88f76f788adac47f44ffcbb778eb498e65c20f1eab3d4841b30e33157a2ff2ae",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 91.17,
+    "current_confidence": 91.17,
+    "first_seen": "2026-01-19T05:17:20.136213",
+    "last_seen": "2026-02-02T23:52:38.897025",
+    "observations": [
+      "2026-01-19T05:17:20.136213",
+      "2026-02-02T23:52:38.897025"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "high",
+    "source_reliability": 0.78,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "bea7f40ddd5a61de02a5ef4b55167db76e22bfd1e7979c9debe77e71a0d8bb3f",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 87.31,
+    "current_confidence": 87.31,
+    "first_seen": "2026-01-11T19:57:22.570655",
+    "last_seen": "2026-01-11T19:57:22.570655",
+    "observations": [
+      "2026-01-11T19:57:22.570655"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "high",
+    "source_reliability": 0.5,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "dropper-92.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 82.37,
+    "current_confidence": 82.37,
+    "first_seen": "2026-01-12T21:29:36.779024",
+    "last_seen": "2026-01-12T21:29:36.779024",
+    "observations": [
+      "2026-01-12T21:29:36.779024"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "high",
+    "source_reliability": 0.61,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "spam193@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 91.23,
+    "current_confidence": 91.23,
+    "first_seen": "2026-02-03T01:36:59.073090",
+    "last_seen": "2026-02-11T01:01:41.125303",
+    "observations": [
+      "2026-02-03T01:36:59.073090",
+      "2026-02-11T01:01:41.125303"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "critical",
+    "source_reliability": 0.74,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "203.0.113.19",
+    "indicator_type": "IP",
+    "initial_confidence": 94.07,
+    "current_confidence": 94.07,
+    "first_seen": "2026-02-02T13:16:11.493936",
+    "last_seen": "2026-02-02T13:16:11.493936",
+    "observations": [
+      "2026-02-02T13:16:11.493936"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "critical",
+    "source_reliability": 0.91,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phish-87.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 85.15,
+    "current_confidence": 85.15,
+    "first_seen": "2026-01-04T12:03:31.911865",
+    "last_seen": "2026-01-04T12:03:31.911865",
+    "observations": [
+      "2026-01-04T12:03:31.911865"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "medium",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "172.16.118.81",
+    "indicator_type": "IP",
+    "initial_confidence": 85.76,
+    "current_confidence": 85.76,
+    "first_seen": "2026-02-19T00:44:14.722603",
+    "last_seen": "2026-02-19T00:44:14.722603",
+    "observations": [
+      "2026-02-19T00:44:14.722603"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "critical",
+    "source_reliability": 0.64,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://drop-128.malware.io/payload.exe",
+    "indicator_type": "URL",
+    "initial_confidence": 84.29,
+    "current_confidence": 84.29,
+    "first_seen": "2026-02-18T22:56:40.020746",
+    "last_seen": "2026-02-22T09:44:51.668510",
+    "observations": [
+      "2026-02-18T22:56:40.020746",
+      "2026-02-22T09:44:51.668510"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "critical",
+    "source_reliability": 0.64,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "malops194@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 78.2,
+    "current_confidence": 78.2,
+    "first_seen": "2026-02-20T13:21:23.111468",
+    "last_seen": "2026-02-20T13:21:23.111468",
+    "observations": [
+      "2026-02-20T13:21:23.111468"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.86,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "c2-64.darknet.xyz",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 82.33,
+    "current_confidence": 82.33,
+    "first_seen": "2026-01-17T00:53:54.056971",
+    "last_seen": "2026-01-17T00:53:54.056971",
+    "observations": [
+      "2026-01-17T00:53:54.056971"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "high",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "203.0.113.159",
+    "indicator_type": "IP",
+    "initial_confidence": 84.64,
+    "current_confidence": 84.64,
+    "first_seen": "2026-02-03T13:42:54.997183",
+    "last_seen": "2026-02-19T14:40:41.993231",
+    "observations": [
+      "2026-02-03T13:42:54.997183",
+      "2026-02-19T14:40:41.993231"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phish-96.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 77.02,
+    "current_confidence": 77.02,
+    "first_seen": "2026-02-16T09:28:23.845058",
+    "last_seen": "2026-02-19T16:47:42.528046",
+    "observations": [
+      "2026-02-16T09:28:23.845058",
+      "2026-02-19T16:47:42.528046"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "medium",
+    "source_reliability": 0.64,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "192.0.2.169",
+    "indicator_type": "IP",
+    "initial_confidence": 87.34,
+    "current_confidence": 87.34,
+    "first_seen": "2026-01-31T18:21:45.999014",
+    "last_seen": "2026-02-20T22:02:49.024293",
+    "observations": [
+      "2026-01-31T18:21:45.999014",
+      "2026-02-07T03:12:26.844948",
+      "2026-02-20T22:02:49.024293"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "critical",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "4d01e72ed50729d60a2324e0934680423e8accfc587e86253ec0f8cff1a4de0f",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 92.33,
+    "current_confidence": 92.33,
+    "first_seen": "2026-01-08T10:36:47.810110",
+    "last_seen": "2026-02-10T16:11:58.300582",
+    "observations": [
+      "2026-01-08T10:36:47.810110",
+      "2026-02-10T16:11:58.300582"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.74,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phisher199@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 72.0,
+    "current_confidence": 72.0,
+    "first_seen": "2026-01-23T23:22:23.540578",
+    "last_seen": "2026-02-20T14:15:56.669948",
+    "observations": [
+      "2026-01-23T23:22:23.540578",
+      "2026-02-01T04:18:28.410969",
+      "2026-02-20T14:15:56.669948"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "high",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "f6fee4de151aa0abc61131987051db731c1546ddaa199253be973e21b56c3a39",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 96.36,
+    "current_confidence": 96.36,
+    "first_seen": "2026-02-08T07:54:16.310850",
+    "last_seen": "2026-02-16T19:32:01.623416",
+    "observations": [
+      "2026-02-08T07:54:16.310850",
+      "2026-02-16T16:44:57.152270",
+      "2026-02-16T19:32:01.623416"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "critical",
+    "source_reliability": 0.68,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phisher191@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 94.56,
+    "current_confidence": 94.56,
+    "first_seen": "2026-01-23T08:50:49.884209",
+    "last_seen": "2026-01-23T08:50:49.884209",
+    "observations": [
+      "2026-01-23T08:50:49.884209"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.63,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "45.33.32.72",
+    "indicator_type": "IP",
+    "initial_confidence": 72.86,
+    "current_confidence": 72.86,
+    "first_seen": "2026-01-28T06:39:53.753884",
+    "last_seen": "2026-02-22T22:55:13.211384",
+    "observations": [
+      "2026-01-28T06:39:53.753884",
+      "2026-02-17T15:19:05.312577",
+      "2026-02-22T22:55:13.211384"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "high",
+    "source_reliability": 0.99,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "phish-63.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 77.68,
+    "current_confidence": 77.68,
+    "first_seen": "2026-02-02T15:13:49.131491",
+    "last_seen": "2026-02-11T17:37:40.078892",
+    "observations": [
+      "2026-02-02T15:13:49.131491",
+      "2026-02-11T17:37:40.078892"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "low",
+    "source_reliability": 0.66,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://exfil-102.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 85.72,
+    "current_confidence": 85.72,
+    "first_seen": "2026-01-28T11:21:03.281203",
+    "last_seen": "2026-02-20T15:54:35.939332",
+    "observations": [
+      "2026-01-28T11:21:03.281203",
+      "2026-02-02T06:56:06.971880",
+      "2026-02-16T18:50:59.318643",
+      "2026-02-20T15:54:35.939332"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.98,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "192.0.2.250",
+    "indicator_type": "IP",
+    "initial_confidence": 79.3,
+    "current_confidence": 79.3,
+    "first_seen": "2026-02-18T02:34:46.637123",
+    "last_seen": "2026-02-18T02:34:46.637123",
+    "observations": [
+      "2026-02-18T02:34:46.637123"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "low",
+    "source_reliability": 0.67,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "b40ef71798ffe2d95acfc01400c8a86b1894483c86ada1bbd016794bb1bb2f8c",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 73.55,
+    "current_confidence": 73.55,
+    "first_seen": "2026-02-14T19:36:32.041678",
+    "last_seen": "2026-02-17T14:59:06.961411",
+    "observations": [
+      "2026-02-14T19:36:32.041678",
+      "2026-02-17T14:59:06.961411"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "medium",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "mal-71.evil.cc",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 78.61,
+    "current_confidence": 78.61,
+    "first_seen": "2026-02-22T16:08:34.168091",
+    "last_seen": "2026-02-22T16:08:34.168091",
+    "observations": [
+      "2026-02-22T16:08:34.168091"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "medium",
+    "source_reliability": 0.73,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "185.220.171.136",
+    "indicator_type": "IP",
+    "initial_confidence": 94.96,
+    "current_confidence": 94.96,
+    "first_seen": "2026-01-15T05:27:25.984212",
+    "last_seen": "2026-01-15T05:27:25.984212",
+    "observations": [
+      "2026-01-15T05:27:25.984212"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "medium",
+    "source_reliability": 0.63,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "198.51.100.142",
+    "indicator_type": "IP",
+    "initial_confidence": 86.17,
+    "current_confidence": 86.17,
+    "first_seen": "2026-01-14T01:46:34.669786",
+    "last_seen": "2026-01-14T01:46:34.669786",
+    "observations": [
+      "2026-01-14T01:46:34.669786"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "medium",
+    "source_reliability": 0.88,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "dropper-84.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 88.58,
+    "current_confidence": 88.58,
+    "first_seen": "2026-01-07T13:02:50.832736",
+    "last_seen": "2026-01-07T13:02:50.832736",
+    "observations": [
+      "2026-01-07T13:02:50.832736"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "medium",
+    "source_reliability": 0.8,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://exfil-112.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 87.03,
+    "current_confidence": 87.03,
+    "first_seen": "2026-02-21T13:49:51.082551",
+    "last_seen": "2026-02-23T06:58:32.941510",
+    "observations": [
+      "2026-02-21T13:49:51.082551",
+      "2026-02-22T19:17:32.345493",
+      "2026-02-23T06:58:32.941510"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "critical",
+    "source_reliability": 0.77,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "6ed9c7af2780ed78e29b269e86fec4ff726bb4bdbea3945afaf8b51579a6bd4d",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 88.77,
+    "current_confidence": 88.77,
+    "first_seen": "2026-02-22T20:05:50.176919",
+    "last_seen": "2026-02-22T20:05:50.176919",
+    "observations": [
+      "2026-02-22T20:05:50.176919"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "high",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "mal-61.evil.cc",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 73.35,
+    "current_confidence": 73.35,
+    "first_seen": "2026-02-16T07:07:08.681832",
+    "last_seen": "2026-02-22T01:59:32.800925",
+    "observations": [
+      "2026-02-16T07:07:08.681832",
+      "2026-02-18T21:06:05.334443",
+      "2026-02-22T01:59:32.800925"
+    ],
+    "is_stale": false,
+    "source": "community_report",
+    "severity": "high",
+    "source_reliability": 0.49,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "91.189.144.3",
+    "indicator_type": "IP",
+    "initial_confidence": 89.35,
+    "current_confidence": 89.35,
+    "first_seen": "2026-01-21T22:09:25.960323",
+    "last_seen": "2026-02-22T18:06:54.058756",
+    "observations": [
+      "2026-01-21T22:09:25.960323",
+      "2026-02-07T13:14:37.473672",
+      "2026-02-11T04:56:06.811916",
+      "2026-02-22T18:06:54.058756"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "critical",
+    "source_reliability": 0.92,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "91.189.46.188",
+    "indicator_type": "IP",
+    "initial_confidence": 95.75,
+    "current_confidence": 95.75,
+    "first_seen": "2026-01-12T11:27:03.971448",
+    "last_seen": "2026-01-12T11:27:03.971448",
+    "observations": [
+      "2026-01-12T11:27:03.971448"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.87,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phisher171@dark.mail",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 85.0,
+    "current_confidence": 85.0,
+    "first_seen": "2026-01-25T06:22:35.028122",
+    "last_seen": "2026-01-25T06:22:35.028122",
+    "observations": [
+      "2026-01-25T06:22:35.028122"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "medium",
+    "source_reliability": 0.7,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "192.0.2.33",
+    "indicator_type": "IP",
+    "initial_confidence": 77.42,
+    "current_confidence": 77.42,
+    "first_seen": "2026-02-04T18:09:53.933271",
+    "last_seen": "2026-02-17T02:09:29.683302",
+    "observations": [
+      "2026-02-04T18:09:53.933271",
+      "2026-02-10T22:04:22.351876",
+      "2026-02-12T01:15:19.700668",
+      "2026-02-17T02:09:29.683302"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "low",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "dropper-93.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 97.98,
+    "current_confidence": 97.98,
+    "first_seen": "2026-01-21T17:26:15.431420",
+    "last_seen": "2026-01-21T17:26:15.431420",
+    "observations": [
+      "2026-01-21T17:26:15.431420"
+    ],
+    "is_stale": false,
+    "source": "honeypot",
+    "severity": "low",
+    "source_reliability": 0.85,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "203.0.113.194",
+    "indicator_type": "IP",
+    "initial_confidence": 73.53,
+    "current_confidence": 73.53,
+    "first_seen": "2026-02-22T18:44:33.322594",
+    "last_seen": "2026-02-22T18:44:33.322594",
+    "observations": [
+      "2026-02-22T18:44:33.322594"
+    ],
+    "is_stale": false,
+    "source": "internal_scan",
+    "severity": "medium",
+    "source_reliability": 0.74,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "exfil-77.shadow.net",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 84.52,
+    "current_confidence": 84.52,
+    "first_seen": "2026-02-21T19:57:50.680938",
+    "last_seen": "2026-02-23T14:28:00.816438",
+    "observations": [
+      "2026-02-21T19:57:50.680938",
+      "2026-02-23T14:28:00.816438"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "medium",
+    "source_reliability": 0.91,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "a20c38579a83a68cbb066caf0b3dd73ab59b3b37f1fb10442d07e0e9cad4c81b",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 84.58,
+    "current_confidence": 84.58,
+    "first_seen": "2026-01-02T08:46:34.365834",
+    "last_seen": "2026-02-08T07:36:35.957540",
+    "observations": [
+      "2026-01-02T08:46:34.365834",
+      "2026-02-04T21:21:16.448228",
+      "2026-02-07T10:45:47.854859",
+      "2026-02-08T07:36:35.957540"
+    ],
+    "is_stale": false,
+    "source": "dns_sinkhole",
+    "severity": "medium",
+    "source_reliability": 0.78,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "https://exfil-124.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 89.7,
+    "current_confidence": 89.7,
+    "first_seen": "2026-02-12T14:15:02.300706",
+    "last_seen": "2026-02-19T22:10:18.544191",
+    "observations": [
+      "2026-02-12T14:15:02.300706",
+      "2026-02-19T22:10:18.544191"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.66,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "dropper-65.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 83.77,
+    "current_confidence": 83.77,
+    "first_seen": "2026-02-21T09:16:13.088246",
+    "last_seen": "2026-02-22T02:12:20.060929",
+    "observations": [
+      "2026-02-21T09:16:13.088246",
+      "2026-02-22T02:12:20.060929"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "medium",
+    "source_reliability": 0.51,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "10.10.69.41",
+    "indicator_type": "IP",
+    "initial_confidence": 94.04,
+    "current_confidence": 94.04,
+    "first_seen": "2026-02-08T14:17:06.893939",
+    "last_seen": "2026-02-08T14:17:06.893939",
+    "observations": [
+      "2026-02-08T14:17:06.893939"
+    ],
+    "is_stale": false,
+    "source": "endpoint_detection",
+    "severity": "high",
+    "source_reliability": 0.85,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "46d70a4d0a4c667f52b5c4166f241547b277be96ac0a68b20da723a5f0275712",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 77.8,
+    "current_confidence": 77.8,
+    "first_seen": "2026-02-06T17:00:40.382872",
+    "last_seen": "2026-02-22T04:01:02.845438",
+    "observations": [
+      "2026-02-06T17:00:40.382872",
+      "2026-02-15T22:37:38.521536",
+      "2026-02-22T04:01:02.845438"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "low",
+    "source_reliability": 0.9,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "7b663723ec0a9ee3197ad3078cc2f3e99cd3ef86489b2a805a68b642833d2706",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 80.88,
+    "current_confidence": 80.88,
+    "first_seen": "2026-01-25T20:24:38.899857",
+    "last_seen": "2026-02-21T13:46:54.726369",
+    "observations": [
+      "2026-01-25T20:24:38.899857",
+      "2026-02-01T18:37:09.023634",
+      "2026-02-21T13:46:54.726369"
+    ],
+    "is_stale": false,
+    "source": "sandbox_analysis",
+    "severity": "high",
+    "source_reliability": 0.95,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "45.33.32.29",
+    "indicator_type": "IP",
+    "initial_confidence": 96.71,
+    "current_confidence": 96.71,
+    "first_seen": "2026-02-08T02:52:19.512060",
+    "last_seen": "2026-02-22T11:29:58.123095",
+    "observations": [
+      "2026-02-08T02:52:19.512060",
+      "2026-02-16T17:51:27.030442",
+      "2026-02-22T11:29:58.123095"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "low",
+    "source_reliability": 0.84,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "malops187@shadow.net",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 70.65,
+    "current_confidence": 70.65,
+    "first_seen": "2026-02-16T15:28:09.295899",
+    "last_seen": "2026-02-22T14:32:41.606872",
+    "observations": [
+      "2026-02-16T15:28:09.295899",
+      "2026-02-22T14:32:41.606872"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "medium",
+    "source_reliability": 0.55,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "5a6d8f0a2ddd173f03a637c7d717a1680199483af5037897ab1c35df48b022bb",
+    "indicator_type": "FILE_HASH",
+    "initial_confidence": 75.25,
+    "current_confidence": 75.25,
+    "first_seen": "2026-01-21T09:40:32.407309",
+    "last_seen": "2026-02-20T17:47:42.973055",
+    "observations": [
+      "2026-01-21T09:40:32.407309",
+      "2026-02-02T07:49:58.143941",
+      "2026-02-20T17:47:42.973055"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "low",
+    "source_reliability": 0.89,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "203.0.113.63",
+    "indicator_type": "IP",
+    "initial_confidence": 72.04,
+    "current_confidence": 72.04,
+    "first_seen": "2026-01-25T06:13:13.211455",
+    "last_seen": "2026-02-23T20:26:16.797904",
+    "observations": [
+      "2026-01-25T06:13:13.211455",
+      "2026-02-10T18:24:40.563368",
+      "2026-02-17T11:15:50.334984",
+      "2026-02-23T20:26:16.797904"
+    ],
+    "is_stale": false,
+    "source": "osint_feed",
+    "severity": "high",
+    "source_reliability": 0.62,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "dropper-83.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 76.69,
+    "current_confidence": 76.69,
+    "first_seen": "2026-01-05T05:10:56.582743",
+    "last_seen": "2026-01-05T05:10:56.582743",
+    "observations": [
+      "2026-01-05T05:10:56.582743"
+    ],
+    "is_stale": false,
+    "source": "malware_repository",
+    "severity": "high",
+    "source_reliability": 0.86,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "phish-80.example.com",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 93.37,
+    "current_confidence": 93.37,
+    "first_seen": "2026-02-13T01:30:43.556959",
+    "last_seen": "2026-02-20T05:22:55.132789",
+    "observations": [
+      "2026-02-13T01:30:43.556959",
+      "2026-02-20T05:22:55.132789"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "low",
+    "source_reliability": 0.94,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "spam175@evil.co",
+    "indicator_type": "EMAIL",
+    "initial_confidence": 95.65,
+    "current_confidence": 95.65,
+    "first_seen": "2026-01-15T14:58:51.976666",
+    "last_seen": "2026-02-22T01:56:45.814143",
+    "observations": [
+      "2026-01-15T14:58:51.976666",
+      "2026-02-22T01:56:45.814143"
+    ],
+    "is_stale": false,
+    "source": "threat_intel_report",
+    "severity": "high",
+    "source_reliability": 1.0,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "dropper-100.badhost.io",
+    "indicator_type": "DOMAIN",
+    "initial_confidence": 92.14,
+    "current_confidence": 92.14,
+    "first_seen": "2026-01-07T19:35:45.102265",
+    "last_seen": "2026-01-07T19:35:45.102265",
+    "observations": [
+      "2026-01-07T19:35:45.102265"
+    ],
+    "is_stale": false,
+    "source": "spear_phishing_campaign",
+    "severity": "critical",
+    "source_reliability": 0.62,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  },
+  {
+    "value": "https://exfil-122.shadow.net/data",
+    "indicator_type": "URL",
+    "initial_confidence": 73.19,
+    "current_confidence": 73.19,
+    "first_seen": "2026-02-01T08:26:27.371612",
+    "last_seen": "2026-02-23T01:46:54.058177",
+    "observations": [
+      "2026-02-01T08:26:27.371612",
+      "2026-02-14T01:56:15.794546",
+      "2026-02-23T01:46:54.058177"
+    ],
+    "is_stale": false,
+    "source": "email_gateway",
+    "severity": "high",
+    "source_reliability": 0.79,
+    "weighted_score": 0.0,
+    "ground_truth_active": true
+  },
+  {
+    "value": "10.10.27.179",
+    "indicator_type": "IP",
+    "initial_confidence": 73.39,
+    "current_confidence": 73.39,
+    "first_seen": "2026-01-02T11:38:53.207136",
+    "last_seen": "2026-01-02T11:38:53.207136",
+    "observations": [
+      "2026-01-02T11:38:53.207136"
+    ],
+    "is_stale": false,
+    "source": "firewall_logs",
+    "severity": "low",
+    "source_reliability": 0.82,
+    "weighted_score": 0.0,
+    "ground_truth_active": false
+  }
+]

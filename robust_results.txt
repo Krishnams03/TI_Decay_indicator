@@ -1,0 +1,36 @@
+﻿python : 
+C:\Users\krish\OneDrive\Documents\Decay 
+Score TI\robust_evaluation.py:302: 
+MatplotlibDeprecationWarning: The 
+'labels' parameter of boxplot() has 
+been renamed 'tick_labels' since 
+Matplotlib 3.9; support for the old 
+name will be dropped in 3.11.
+At line:1 char:1
++ python robust_evaluation.py 2>&1 | 
+Out-File -FilePath robust_results. ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : 
+NotSpecified:     
+(C:\Users\krish\...ropped in 
+3.11.:Strin    g) [], RemoteException
+    + FullyQualifiedErrorId : 
+NativeCommandE    rror
+ 
+  bp = ax.boxplot(data, labels=models, 
+patch_artist=True, widths=0.5,
+Running robust evaluation (10 seeds x 4 models + static)...
+This takes a minute or two.
+
+Model                   AUC-ROC           Opt F1            CV F1              FPR
+----------------------------------------------------------------------------------
+static         0.523▒0.061    0.721▒0.037    0.710▒0.038    0.991▒0.019
+exponential    0.894▒0.015    0.875▒0.016    0.861▒0.020    0.261▒0.073
+linear         0.879▒0.013    0.864▒0.022    0.846▒0.030    0.283▒0.075
+sigmoid        0.943▒0.019    0.905▒0.009    0.887▒0.014    0.155▒0.067
+power_law      0.719▒0.022    0.756▒0.035    0.730▒0.040    0.702▒0.120
+
+Charts saved to:
+  C:\Users\krish\OneDrive\Documents\Decay Score TI\output\multi_decay_auc.png
+  C:\Users\krish\OneDrive\Documents\Decay Score TI\output\cv_f1_comparison.png
+  C:\Users\krish\OneDrive\Documents\Decay Score TI\output\auc_boxplot.png

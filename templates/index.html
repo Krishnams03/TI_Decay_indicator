@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Adaptive Time-Decay Model for Dynamic Threat Indicator Confidence Scoring Dashboard">
+    <title>Threat Indicator Decay Engine</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ═══ Header ═══ -->
+    <header class="hero">
+        <div class="hero-glow"></div>
+        <h1>🛡️ Adaptive Time-Decay Engine</h1>
+        <p class="subtitle">Dynamic Threat Indicator Confidence Scoring</p>
+    </header>
+
+    <!-- ═══ Controls Panel ═══ -->
+    <section class="controls-panel" id="controls">
+        <div class="control-group">
+            <h2>1. Load Threat Feed</h2>
+            <p class="hint">Choose a feed source to ingest IOCs</p>
+            <div class="btn-row">
+                <button id="btn-load-sample" class="btn btn-primary" onclick="loadFeed('sample')">
+                    📥 Load Sample Feed
+                </button>
+                <button id="btn-load-sim" class="btn btn-accent" onclick="loadFeed('simulation')">
+                    🧪 Generate Simulation Data (200 IOCs)
+                </button>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <h2>2. Simulate Time Passage</h2>
+            <p class="hint">Slide to apply decay at different day offsets</p>
+            <div class="slider-row">
+                <label for="day-slider">Day Offset:</label>
+                <input type="range" id="day-slider" min="0" max="60" value="0" step="1"
+                    oninput="onSliderChange(this.value)" disabled>
+                <span id="day-label" class="day-badge">Day 0</span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <h2>3. Analyse & Evaluate</h2>
+            <p class="hint">Compare static vs decay scoring and view evaluation metrics</p>
+            <div class="btn-row">
+                <button id="btn-compare" class="btn btn-warn" onclick="runComparison()" disabled>
+                    📊 Compare Static vs Decay
+                </button>
+                <button id="btn-evaluate" class="btn btn-success" onclick="runEvaluation()" disabled>
+                    📈 Run Evaluation Metrics
+                </button>
+                <button id="btn-robust" class="btn" style="background:linear-gradient(135deg,#8b5cf6,#6366f1)"
+                    onclick="runRobustEval()">
+                    🔬 Robust Evaluation (10 Seeds × 4 Models)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Status Banner ═══ -->
+    <div id="status-banner" class="status-banner hidden"></div>
+
+    <!-- ═══ IOC Table ═══ -->
+    <section id="ioc-section" class="card hidden">
+        <h2>IOC Confidence Dashboard <span id="ioc-count" class="badge"></span></h2>
+        <div class="table-wrap">
+            <table id="ioc-table">
+                <thead>
+                    <tr>
+                        <th>Indicator</th>
+                        <th>Type</th>
+                        <th>Severity</th>
+                        <th>Source</th>
+                        <th>Confidence</th>
+                        <th>Weighted</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="ioc-tbody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ═══ Comparison Section ═══ -->
+    <section id="comparison-section" class="card hidden">
+        <h2>📊 Static vs Decay Scoring Comparison</h2>
+        <div id="comparison-chart" class="chart-container"></div>
+        <div class="table-wrap">
+            <table id="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Indicator</th>
+                        <th>Type</th>
+                        <th>Days Old</th>
+                        <th>Ground Truth</th>
+                        <th>Static Score</th>
+                        <th>Static Flag</th>
+                        <th>Decay Score</th>
+                        <th>Decay Flag</th>
+                        <th>Weighted</th>
+                    </tr>
+                </thead>
+                <tbody id="comparison-tbody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ═══ Evaluation Section ═══ -->
+    <section id="evaluation-section" class="card hidden">
+        <h2>📈 Evaluation Metrics</h2>
+        <div id="eval-summary" class="eval-summary"></div>
+        <div id="metrics-table-wrap" class="table-wrap"></div>
+        <div class="charts-grid" id="eval-charts"></div>
+    </section>
+
+    <!-- ═══ Robust Evaluation Section ═══ -->
+    <section id="robust-section" class="card hidden">
+        <h2>🔬 Robust Multi-Seed Evaluation</h2>
+        <p class="hint">10 seeds × 4 decay models + static baseline — with cross-validated F1 and confidence intervals
+        </p>
+        <div id="robust-summary" class="eval-summary"></div>
+        <div id="robust-table-wrap" class="table-wrap"></div>
+        <div class="charts-grid" id="robust-charts"></div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer>
+        <p>Adaptive Time-Decay Engine &bull; C(t) = C₀ × e<sup>−λt</sup> &bull; Research Project 2026</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

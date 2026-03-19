@@ -1,0 +1,25 @@
+﻿DAY  5
+  Static:   F1=0.7138  FPR=1.0000  Acc=0.5550  AUC=0.4683  optF1=0.7138@t=0.0
+  Decay:    F1=0.8311  FPR=0.1910  Acc=0.8150  AUC=0.9001  optF1=0.8617@t=7.0
+  Weighted: F1=0.6780  FPR=0.0674  Acc=0.7150  AUC=0.8913  optF1=0.8527@t=2.5
+
+DAY 10
+  Static:   F1=0.7138  FPR=1.0000  Acc=0.5550  AUC=0.4683  optF1=0.7138@t=0.0
+  Decay:    F1=0.6740  FPR=0.1011  Acc=0.7050  AUC=0.8773  optF1=0.8583@t=3.5
+  Weighted: F1=0.4414  FPR=0.0225  Acc=0.5950  AUC=0.8738  optF1=0.8548@t=3.0
+
+DAY 15
+  Static:   F1=0.7138  FPR=1.0000  Acc=0.5550  AUC=0.4683  optF1=0.7138@t=0.0
+  Decay:    F1=0.4967  FPR=0.0449  Acc=0.6150  AUC=0.8564  optF1=0.8482@t=1.5
+  Weighted: F1=0.3259  FPR=0.0225  Acc=0.5450  AUC=0.8514  optF1=0.8471@t=1.0
+
+DAY 20
+  Static:   F1=0.7138  FPR=1.0000  Acc=0.5550  AUC=0.4683  optF1=0.7138@t=0.0
+  Decay:    F1=0.3944  FPR=0.0337  Acc=0.5700  AUC=0.8355  optF1=0.8379@t=1.0
+  Weighted: F1=0.2481  FPR=0.0225  Acc=0.5150  AUC=0.8278  optF1=0.8372@t=0.5
+
+DAY 30
+  Static:   F1=0.7138  FPR=1.0000  Acc=0.5550  AUC=0.4683  optF1=0.7138@t=0.0
+  Decay:    F1=0.3382  FPR=0.0225  Acc=0.5500  AUC=0.7929  optF1=0.8285@t=0.5
+  Weighted: F1=0.1167  FPR=0.0225  Acc=0.4700  AUC=0.7463  optF1=0.7636@t=0.5
+
