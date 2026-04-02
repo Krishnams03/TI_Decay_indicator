@@ -29,7 +29,53 @@ function truncate(str, len = 35) {
     return str.length > len ? str.slice(0, len) + "…" : str;
 }
 
-/* ── Load Feed ───────────────────────────────────────────────── */
+function sourceClass(src) {
+    const s = (src || "default").toLowerCase().replace(/[\s-]/g, "_");
+    return `src-${s}`;
+}
+
+/* ── Feed Status (check on page load) ────────────────────────── */
+async function checkFeedStatus() {
+    try {
+        const resp = await fetch("/api/feed-status");
+        const data = await resp.json();
+        const row = document.getElementById("feed-status-row");
+        let html = "";
+        let anyConfigured = false;
+
+        for (const [key, info] of Object.entries(data)) {
+            const cls = info.configured ? "configured" : "missing";
+            const label = info.configured ? "✓ Key set" : "⚠ No key";
+            html += `<span class="feed-status-chip ${cls}">
+                <span class="dot"></span>
+                ${info.icon} ${info.name} — ${label}
+            </span>`;
+
+            // Enable the matching button
+            const btn = document.getElementById(`btn-live-${key}`);
+            if (btn && info.configured) {
+                btn.disabled = false;
+                anyConfigured = true;
+            }
+        }
+
+        row.innerHTML = html;
+
+        // Enable "Load All" if any feed is configured
+        const btnAll = document.getElementById("btn-live-all");
+        if (btnAll && anyConfigured) {
+            btnAll.disabled = false;
+        }
+    } catch (e) {
+        const row = document.getElementById("feed-status-row");
+        row.innerHTML = `<span class="hint" style="color:var(--danger)">Could not check feed status — is the server running?</span>`;
+    }
+}
+
+// Check feed status when page loads
+document.addEventListener("DOMContentLoaded", checkFeedStatus);
+
+/* ── Load Feed (sample / simulation) ─────────────────────────── */
 async function loadFeed(type) {
     const btn = type === "sample"
         ? document.getElementById("btn-load-sample")
@@ -51,15 +97,18 @@ async function loadFeed(type) {
             document.getElementById("ioc-section").classList.remove("hidden");
             document.getElementById("ioc-count").textContent = `${data.count} IOCs`;
             document.getElementById("day-slider").disabled = false;
-            document.getElementById("day-slider").value = 0;
-            document.getElementById("day-label").textContent = "Day 0";
+            document.getElementById("day-slider").value = 20;
+            document.getElementById("day-label").textContent = "Day 20";
             document.getElementById("btn-compare").disabled = false;
             document.getElementById("btn-evaluate").disabled = (type !== "simulation");
-            currentDay = 0;
+            currentDay = 20;
 
             // Hide previous comparison/evaluation
             document.getElementById("comparison-section").classList.add("hidden");
             document.getElementById("evaluation-section").classList.add("hidden");
+
+            // Start from a non-zero day so decay differences are visible immediately.
+            applyDecay(currentDay);
 
             showStatus(`✔ Loaded ${data.count} IOCs from ${type} feed`, "success");
         }
@@ -68,6 +117,58 @@ async function loadFeed(type) {
     }
 
     btn.innerHTML = type === "sample" ? "📥 Load Sample Feed" : "🧪 Generate Simulation Data (200 IOCs)";
+    btn.disabled = false;
+}
+
+/* ── Load Live Feed ──────────────────────────────────────────── */
+async function loadLiveFeed(sources) {
+    // Find which button was clicked for loading state
+    let btnId = "btn-live-all";
+    if (sources && sources.length === 1) {
+        btnId = `btn-live-${sources[0]}`;
+    }
+    const btn = document.getElementById(btnId);
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = `<span class="spinner"></span> Fetching live IOCs…`;
+    btn.disabled = true;
+
+    const limit = parseInt(document.getElementById("live-limit").value) || 50;
+    const days = parseInt(document.getElementById("live-days").value) || 7;
+
+    try {
+        const resp = await fetch("/api/load-live-feed", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ sources, limit, days }),
+        });
+        const data = await resp.json();
+
+        if (data.status === "ok") {
+            feedLoaded = true;
+            renderIOCTable(data.iocs);
+            document.getElementById("ioc-section").classList.remove("hidden");
+            document.getElementById("ioc-count").textContent = `${data.count} IOCs`;
+            document.getElementById("day-slider").disabled = false;
+            document.getElementById("day-slider").value = 0;
+            document.getElementById("day-label").textContent = "Day 0";
+            document.getElementById("btn-compare").disabled = false;
+            document.getElementById("btn-evaluate").disabled = true; // no ground truth for live
+            currentDay = 0;
+
+            // Hide previous comparison/evaluation
+            document.getElementById("comparison-section").classList.add("hidden");
+            document.getElementById("evaluation-section").classList.add("hidden");
+
+            const srcLabel = sources ? sources.join(", ") : "all configured";
+            showStatus(`✔ Loaded ${data.count} live IOCs from: ${srcLabel}`, "success");
+        } else {
+            showStatus(`⚠ ${data.message}`, "error");
+        }
+    } catch (e) {
+        showStatus(`Live feed error: ${e.message}`, "error");
+    }
+
+    btn.innerHTML = originalHTML;
     btn.disabled = false;
 }
 
@@ -87,7 +188,7 @@ function renderIOCTable(iocs) {
             <td title="${ioc.value}">${truncate(ioc.value, 38)}</td>
             <td>${ioc.indicator_type}</td>
             <td><span class="${sevClass(ioc.severity)}" style="font-weight:600">${(ioc.severity || "high").toUpperCase()}</span></td>
-            <td>${ioc.source || "—"}</td>
+            <td><span class="source-badge ${sourceClass(ioc.source)}">${ioc.source || "—"}</span></td>
             <td>
                 <div class="conf-bar">
                     <div class="bar-track">

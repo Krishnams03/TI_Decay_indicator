@@ -34,6 +34,33 @@
                     🧪 Generate Simulation Data (200 IOCs)
                 </button>
             </div>
+
+            <!-- ── Live Feed Controls ── -->
+            <h3 class="live-feed-heading">🌍 Live Threat Intelligence Feeds</h3>
+            <p class="hint">Pull real-time IOCs from configured feeds — requires API keys</p>
+            <div id="feed-status-row" class="feed-status-row">
+                <span class="hint">Checking feed status…</span>
+            </div>
+            <div class="btn-row" style="margin-top:0.6rem">
+                <button id="btn-live-otx" class="btn btn-live" onclick="loadLiveFeed(['otx'])" disabled>
+                    🛰️ AlienVault OTX
+                </button>
+                <button id="btn-live-threatfox" class="btn btn-live" onclick="loadLiveFeed(['threatfox'])" disabled>
+                    🌐 ThreatFox
+                </button>
+                <button id="btn-live-urlhaus" class="btn btn-live" onclick="loadLiveFeed(['urlhaus'])" disabled>
+                    🔗 URLhaus
+                </button>
+                <button id="btn-live-all" class="btn btn-live-all" onclick="loadLiveFeed(null)" disabled>
+                    🚀 Load All Live Feeds
+                </button>
+            </div>
+            <div class="live-controls-row">
+                <label for="live-limit">Limit per source:</label>
+                <input type="number" id="live-limit" value="50" min="5" max="200" step="5">
+                <label for="live-days">Days back:</label>
+                <input type="number" id="live-days" value="7" min="1" max="30" step="1">
+            </div>
         </div>
 
         <div class="control-group">
@@ -48,7 +75,7 @@
         </div>
 
         <div class="control-group">
-            <h2>3. Analyse & Evaluate</h2>
+            <h2>3. Analyse &amp; Evaluate</h2>
             <p class="hint">Compare static vs decay scoring and view evaluation metrics</p>
             <div class="btn-row">
                 <button id="btn-compare" class="btn btn-warn" onclick="runComparison()" disabled>

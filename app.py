@@ -2,15 +2,20 @@
 Flask web application — REST API + dashboard for the Decay Engine.
 
 Endpoints:
-  GET  /                  → serve the dashboard
-  POST /api/load-feed     → load sample or simulation feed
-  POST /api/apply-decay   → apply decay at a given day offset
-  POST /api/boost         → re-observe a specific IOC
-  GET  /api/comparison    → static vs decay comparison
-  GET  /api/evaluation    → full evaluation metrics + chart paths
+  GET  /                      → serve the dashboard
+  POST /api/load-feed         → load sample or simulation feed
+  POST /api/load-live-feed    → load from live TI sources (OTX, ThreatFox, URLhaus)
+  GET  /api/feed-status       → check which live feeds are configured
+  POST /api/apply-decay       → apply decay at a given day offset
+  POST /api/boost             → re-observe a specific IOC
+  GET  /api/comparison        → static vs decay comparison
+  GET  /api/evaluation        → full evaluation metrics + chart paths
 """
 
 from __future__ import annotations
+
+from dotenv import load_dotenv
+load_dotenv()   # load .env before config reads os.environ
 
 import base64
 import io
@@ -28,7 +33,7 @@ from config import (
 )
 from models import IOC
 from ioc_store import IOCStore
-from feed_loader import load_sample_feed
+from feed_loader import load_sample_feed, load_live_feed, get_feed_status
 from decay_engine import apply_decay, apply_boost, check_stale, calculate_weighted_score
 from confidence_updater import update_all, get_priority_list
 from simulation import generate_simulation_dataset, save_simulation_dataset
@@ -47,7 +52,7 @@ app = Flask(__name__,
 # ── In-memory state ──────────────────────────────────────────────────────────
 _store = IOCStore(IOC_DATABASE_PATH)
 _original_iocs: List[IOC] = []        # snapshot of feed before any decay
-_reference_time = datetime(2026, 2, 24, 0, 0, 0)
+_reference_time = datetime.now().replace(microsecond=0)
 
 
 def _img_to_base64(path: str) -> str:
@@ -74,17 +79,25 @@ def serve_output(filename):
 @app.route("/api/load-feed", methods=["POST"])
 def api_load_feed():
     """Load the sample feed or generate simulation dataset."""
-    global _original_iocs, _store
+    global _original_iocs, _store, _reference_time
 
     body = request.get_json(silent=True) or {}
     feed_type = body.get("feed_type", "sample")   # "sample" or "simulation"
 
+    # Re-anchor simulation time each load so live feeds decay correctly.
+    load_time = datetime.now().replace(microsecond=0)
+    _reference_time = load_time
+
     if feed_type == "simulation":
-        iocs = generate_simulation_dataset(200, reference_time=_reference_time)
+        iocs = generate_simulation_dataset(200, reference_time=load_time)
         sim_path = os.path.join(_BASE, "data", "simulation_iocs.json")
         save_simulation_dataset(iocs, sim_path)
     else:
         iocs = load_sample_feed(SAMPLE_FEED_PATH)
+
+    # Use the latest observation in the loaded feed as t=0 for comparisons.
+    if iocs:
+        _reference_time = max(i.last_seen for i in iocs)
 
     _original_iocs = copy.deepcopy(iocs)
     _store = IOCStore(IOC_DATABASE_PATH)
@@ -96,8 +109,56 @@ def api_load_feed():
         "status": "ok",
         "count": len(iocs),
         "feed_type": feed_type,
+        "reference_time": _reference_time.isoformat(),
         "iocs": [ioc.to_dict() for ioc in iocs],
     })
+
+
+# ── API: Load Live Feed ─────────────────────────────────────────────────────
+
+@app.route("/api/load-live-feed", methods=["POST"])
+def api_load_live_feed():
+    """Load IOCs from one or more live threat intelligence feeds."""
+    global _original_iocs, _store
+
+    body = request.get_json(silent=True) or {}
+    sources = body.get("sources", None)      # list of feed names, or None for all
+    limit   = int(body.get("limit", 50))
+    days    = int(body.get("days", 7))
+
+    try:
+        iocs = load_live_feed(sources=sources, limit=limit, days=days)
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+    if not iocs:
+        return jsonify({
+            "status": "error",
+            "message": "No IOCs returned. Check your API keys and network connection.",
+        }), 400
+
+    # Use current time as reference for live data
+    _original_iocs = copy.deepcopy(iocs)
+    _store = IOCStore(IOC_DATABASE_PATH)
+    for ioc in iocs:
+        _store.add_ioc(ioc)
+    _store.save()
+
+    return jsonify({
+        "status": "ok",
+        "count": len(iocs),
+        "feed_type": "live",
+        "sources": sources or ["all configured"],
+        "iocs": [ioc.to_dict() for ioc in iocs],
+    })
+
+
+# ── API: Feed Status ────────────────────────────────────────────────────────
+
+@app.route("/api/feed-status", methods=["GET"])
+def api_feed_status():
+    """Return which live feeds have API keys configured."""
+    return jsonify(get_feed_status())
 
 
 # ── API: Apply Decay ────────────────────────────────────────────────────────
